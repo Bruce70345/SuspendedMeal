@@ -3,7 +3,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-0078D4?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-4DB33D?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white)](https://mongoosejs.com/)
-[![Zustand](https://img.shields.io/badge/Zustand-FFD700?style=for-the-badge&logo=zustand&logoColor=white)](https://github.com/pmndrs/zustand)
+[![Zustand](https://img.shields.io/badge/Zustand-FFD700?style=for-the-badge&logo=zustand&logoColor=white)](https://zustand-demo.pmnd.rs/)
 [![Material UI](https://img.shields.io/badge/Material_UI-007FFF?style=for-the-badge&logo=material-ui&logoColor=white)](https://mui.com/)
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
