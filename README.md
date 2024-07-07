@@ -24,7 +24,7 @@
 
 ## 截圖
 
-![Home](https://github.com/Bruce70345/SuspendedMeal/WebAppPics/HomePage.png)
-![EditingMeals](https://github.com/Bruce70345/SuspendedMeal/WebAppPics/EditingMeals.png)
-![Login](https://github.com/Bruce70345/SuspendedMeal/WebAppPics/LoginPage.png)
-![About](https://github.com/Bruce70345/SuspendedMeal/WebAppPics/AboutUsPage.png)
+![Home](https://github.com/Bruce70345/SuspendedMeal/blob/main/WebAppPics/HomePage.png?raw=true)
+![EditingMeals](https://github.com/Bruce70345/SuspendedMeal/blob/main/WebAppPics/EditingMeals.png?raw=true)
+![Login](https://github.com/Bruce70345/SuspendedMeal/blob/main/WebAppPics/LoginPage.png?raw=true)
+![About](https://github.com/Bruce70345/SuspendedMeal/blob/main/WebAppPics/AboutUsPage.png?raw=true)
