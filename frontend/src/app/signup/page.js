@@ -43,11 +43,11 @@ export default function SignUp() {
                 throw new Error('Failed to register user');
             }
 
-            alert('註冊成功！請登入！');
+            alert('Registration successful');
             redirect('/login');
         } catch (error) {
-            console.error('註冊失敗:', error);
-            alert('註冊失敗，請稍後重試。');
+            console.error('Registration failed:', error);
+            alert('Registration failed, please try again later.');
         }
 
     };

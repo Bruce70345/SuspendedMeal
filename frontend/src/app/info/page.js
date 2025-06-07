@@ -89,31 +89,31 @@ const Info = () => {
       }}>
         <Stack spacing={2} sx={{ width: "50%", mt: 5 }}>
           <Item>
-            <Typography component='h1' variant='h4' sx={{ fontWeight: 500 }}>新增餐點</Typography >
+            <Typography component='h1' variant='h4' sx={{ fontWeight: 500 }}>Add a new product</Typography >
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Box>
-                <Typography variant='p'>供應餐點名稱: </Typography>
+                <Typography variant='p'>Supply product name: </Typography>
                 <input
                   type="text"
-                  placeholder="輸入餐點名稱"
+                  placeholder="Enter product name"
                   value={newProductName}
                   onChange={(e) => setNewProductName(e.target.value)}
                 />
               </Box>
               <Box>
-              <Typography variant='p'>每日可供應量: </Typography>
+              <Typography variant='p'>Daily supply quantity: </Typography>
                 <input
                   type="number"
-                  placeholder="每日可供應量"
+                  placeholder="Daily supply quantity"
                   value={newProductQuantity}
                   onChange={(e) => setNewProductQuantity(e.target.value)}
                 />
               </Box>
               <Box>
-              <Typography variant='p'>優惠截止日: </Typography>
+              <Typography variant='p'>Campaign expiration date: </Typography>
                 <input
                   type="date"
-                  placeholder="優惠截止日"
+                  placeholder="Campaign expiration date"
                   value={newProductExpiration}
                   onChange={(e) => setNewProductExpiration(e.target.value)}
                 />
@@ -124,8 +124,8 @@ const Info = () => {
           {products.map((product) => (
             <Item key={product._id}>
               <Typography variant='h6'>{product.productName}</Typography>
-              <Typography>可供應數量: {product.dailyQuantity}</Typography>
-              <Typography>優惠截止: {new Date(product.campaignExpiration).toLocaleDateString()}</Typography>
+              <Typography>Supply quantity: {product.dailyQuantity}</Typography>
+              <Typography>Campaign expiration: {new Date(product.campaignExpiration).toLocaleDateString()}</Typography>
               <Stack direction="row" spacing={1} sx={{
                 display: "flex",
                 justifyContent: "center",
@@ -134,7 +134,7 @@ const Info = () => {
               }}>
                 <Button color="secondary" size="small" variant="contained" onClick={() => handleIncrementProduct(product._id, product.dailyQuantity)} disabled={!userId}>+ 1</Button>
                 <Button color="secondary" size="small" variant="contained" onClick={() => handleDecrementProduct(product._id, product.dailyQuantity)} disabled={!userId}>- 1</Button>
-                <Button color="error" size="small" variant="outlined" onClick={() => handleDeleteProduct(product._id)} disabled={!userId}>刪除品項</Button>
+                <Button color="error" size="small" variant="outlined" onClick={() => handleDeleteProduct(product._id)} disabled={!userId}>Delete item</Button>
               </Stack>
             </Item>
           ))}

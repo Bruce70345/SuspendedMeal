@@ -9,7 +9,7 @@ export default function about() {
     <ThemeProvider theme={Theme}>
       <Box sx={{ margin:"auto", my: 4, width:"75%" }}>
         <Typography variant="h3" component="h1" gutterBottom>
-          關於我們
+          About us
         </Typography>
 
         <Grid container spacing={4}>
@@ -17,10 +17,10 @@ export default function about() {
             <Card sx={{ height: '100%' }}>
               <CardContent>
                 <Typography variant="h5" component="h2" gutterBottom>
-                  起源
+                  Origin
                 </Typography>
                 <Typography variant="body1" paragraph>
-                  我們的故事始於一則令人心酸的新聞：一位窮人因為沒錢吃飯而去偷水果。這則新聞觸動了我們的心，讓我們意識到有許多人在為下一餐的著落而煩惱。然而，我們也發現，現今有許多善心店家願意提供愛心餐點。於是，我們決定建立一個平台，將這些資源整合起來，讓有需要的人可以方便地獲取到這些愛心餐。
+                  Our story began with a heartbreaking news: a poor person stole fruit because they didn't have money to eat. This news touched our hearts and made us realize that many people were struggling to find food for their next meal. However, we also discovered that there are many kind-hearted restaurants willing to provide free meals. So, we decided to create a platform to integrate these resources, so that those in need can easily obtain these free meals.
                 </Typography>
               </CardContent>
             </Card>
@@ -30,10 +30,10 @@ export default function about() {
             <Card sx={{ height: '100%' }}>
               <CardContent>
                 <Typography variant="h5" component="h2" gutterBottom>
-                  我們的目標
+                  Our goal
                 </Typography>
                 <Typography variant="body1" paragraph>
-                  我們的目標是通過愛心待用餐平台，將有需要的個人與願意提供幫助的店家連接起來。我們希望通過這個平台，不僅能夠解決飢餓問題，還能夠促進社區的愛心互助。
+                  Our goal is to connect individuals in need with restaurants willing to provide help through the free meal map platform. We hope that through this platform, not only can we solve the problem of hunger, but also promote community love and help.
                 </Typography>
               </CardContent>
             </Card>
@@ -43,19 +43,19 @@ export default function about() {
             <Card sx={{ width: '100%' }}>
               <CardContent>
                 <Typography variant="h5" component="h2" gutterBottom>
-                  網頁功能
+                  Web features
                 </Typography>
                 <Typography variant="body1" paragraph>
-                  我們的平台提供以下功能：
+                  Our platform provides the following features:
                 </Typography>
                 <Typography variant="body1" paragraph>
-                  1. 查看店家供應情形：用戶可以瀏覽和搜索附近提供愛心餐的店家，了解每家店目前的供應情況。
+                  1. View restaurant supply situation: users can browse and search for nearby restaurants providing free meals, and understand the current supply situation of each restaurant.
                 </Typography>
                 <Typography variant="body1" paragraph>
-                  2. 商家信息編輯：註冊商家可以在資訊頁面上編輯和更新餐點信息，確保用戶獲得最新的供應情況。
+                  2. Business information editing: registered businesses can edit and update meal information on the information page to ensure that users receive the latest supply information.
                 </Typography>
                 <Typography variant="body1" paragraph>
-                  3. 資源整合：我們的平台會不斷收集和整合更多的愛心資源，確保有需要的人能夠獲得幫助。
+                  3. Resource integration: our platform will continue to collect and integrate more free resources to ensure that those in need can receive help.
                 </Typography>
               </CardContent>
             </Card>

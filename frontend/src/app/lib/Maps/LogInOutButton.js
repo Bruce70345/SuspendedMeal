@@ -17,7 +17,7 @@ const LogInOutButton = () => {
     const handleSignOut = () => {
         // 清除本地存儲中的用戶信息
         localStorage.removeItem('user');
-        alert('您已登出');
+        alert('You have logged out');
         logOut();
     }
 
@@ -31,7 +31,7 @@ const LogInOutButton = () => {
                         style={{ fontSize: '1rem' }}
                         href="/info"
                     >
-                        我的資訊
+                        My information
                     </Button>
                     <Button
                         key="signout"
@@ -40,7 +40,7 @@ const LogInOutButton = () => {
                         style={{ fontSize: '1rem' }}
                         href="/"
                     >
-                        登出
+                        Log out
                     </Button>
                 </div>
             ) : (
@@ -51,7 +51,7 @@ const LogInOutButton = () => {
                         style={{ fontSize: '1rem' }}
                         href="/signin"
                     >
-                        登入
+                        Login
                     </Button>
                     <Button
                         key="signup"
@@ -59,7 +59,7 @@ const LogInOutButton = () => {
                         style={{ fontSize: '1rem' }}
                         href="/signup"
                     >
-                        註冊
+                        Register
                     </Button>
                 </div>
             )}

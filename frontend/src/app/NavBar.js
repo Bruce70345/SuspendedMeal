@@ -71,7 +71,7 @@ function NavBar() {
                                 style={{ 'fontSize': '1rem' }}
                             >
                                 <Link href={"/about"} style={{ textDecoration: 'none' }}>
-                                    關於我們
+                                    About us
                                 </Link>
                             </MenuItem>
                             {/* <MenuItem
@@ -101,7 +101,7 @@ function NavBar() {
                             style={{ 'fontSize': '1rem' }}
                             href="/about"
                         >
-                            關於我們
+                            About us
                         </Button>
                         {/* <Button
                             key="info"
@@ -110,7 +110,7 @@ function NavBar() {
                             style={{ 'fontSize': '1rem' }}
                             href="/shops"
                         >
-                            合作店家
+                            Cooperation restaurants
                         </Button> */}
 
                     </Box>

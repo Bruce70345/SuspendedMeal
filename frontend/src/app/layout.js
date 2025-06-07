@@ -6,8 +6,8 @@ import NavBar from "@/app/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "愛心餐地圖",
-  description: "一起好好長大",
+  title: "Free meal map",
+  description: "let's grow together",
 };
 
 export default function RootLayout({ children }) {

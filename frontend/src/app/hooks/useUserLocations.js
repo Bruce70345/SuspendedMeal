@@ -14,7 +14,7 @@ export default function useUserLocations() {
                 }
                 const data = await res.json();
                 const filteredLocations = data
-                    .filter(user => user.lnglat) // 过滤出有 lnglat 信息的用户
+                    .filter(user => user.lnglat)
                     .map(user => ({
                         key: user.name,
                         location: {

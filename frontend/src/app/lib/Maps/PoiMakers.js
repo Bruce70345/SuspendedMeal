@@ -35,13 +35,13 @@ const PoiMarkers = ({ pois }) => {
                                     rel="noopener noreferrer"
                                     style={{ textDecoration: 'none' }}
                                 >
-                                    📍前往餐廳
+                                    📍Go to the restaurant
                                 </Link>
                                 <Typography variant="h6" style={{ margin: '10px 0' }}>
                                     {poi.key}
                                 </Typography>
                                 <Typography variant="p">
-                                    跟老闆說: {poi.secret}
+                                    Tell the owner: {poi.secret}
                                 </Typography>
                                 {products.filter(product => product.userId === poi.userID).map(product => (
                                     <div key={product._id}>
@@ -53,7 +53,7 @@ const PoiMarkers = ({ pois }) => {
                                                 {product.productName}
                                             </Typography>
                                             <Typography variant="p" style={{ marginLeft: '5px' }}>
-                                                📆: 到{product.campaignExpiration.split('T')[0]}
+                                                📆: to {product.campaignExpiration.split('T')[0]}
                                             </Typography>
                                         </div>
                                     </div>

@@ -42,7 +42,7 @@ export default function SignIn() {
       });
 
       if (!response.ok) {
-        throw new Error('驗證失敗');
+        throw new Error('authentication failed');
       }
       const result = await response.json();
 
@@ -54,7 +54,7 @@ export default function SignIn() {
         console.error(result.message);
       }
     } catch (error) {
-      console.error('登入錯誤:', error);
+      console.error('login error:', error);
     }
   };
 
@@ -74,7 +74,7 @@ export default function SignIn() {
             <Link href="/"><MapIcon /></Link>
           </Avatar>
           <Typography component="h1" variant="h5">
-            店家登入
+            Restaurant login
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -82,20 +82,22 @@ export default function SignIn() {
               required
               fullWidth
               id="email"
-              label="電子信箱"
+              label="Email"
               name="email"
               autoComplete="email"
               autoFocus
+              placeholder="pho@gmail.com"
             />
             <TextField
               margin="normal"
               required
               fullWidth
               name="password"
-              label="登入密碼"
+              label="Password"
               type="password"
               id="password"
               autoComplete="current-password"
+              placeholder="vitnamiseNoodles"
             />
             <Button
               type="submit"
@@ -103,12 +105,12 @@ export default function SignIn() {
               variant="contained"
               sx={{ mt: 3, mb: 1 }}
             >
-              點此登入
+              Click to login
             </Button>
             <Grid container>
               <Grid item>
                 <Link href="signup" variant="body2">
-                  {"想成為供餐的愛心店家？點此註冊"}
+                  {"want to be a restaurant that provides free meals? click here to register"}
                 </Link>
               </Grid>
             </Grid>
