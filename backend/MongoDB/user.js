@@ -1,8 +1,7 @@
 const { v4: uuid } = require('uuid');
 const mongoose = require('mongoose');
 const FreeMealUser = require('./models/freeMealUserModel');
-const TOKEN = 'AIzaSyCeKF3e48aw5X5TiIK40W7ihzQVGsSJRR4';
-const SECRET = 'nwN0H2lrHVQwzBOk2SlG-DjPEMw='
+
 
 // 连接 MongoDB 数据库
 mongoose.connect('mongodb://localhost:27017/freeMeals')

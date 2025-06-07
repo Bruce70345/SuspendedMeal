@@ -1,0 +1,27 @@
+{
+  "name": "FreeMeal",
+  "services": [
+    {
+      "name": "backend",
+      "source": {
+        "type": "git",
+        "path": "./backend"
+      },
+      "environment": {
+        "MONGODB_URI": "${MONGODB_URI}",
+        "PORT": "8080"
+      }
+    },
+    {
+      "name": "frontend",
+      "source": {
+        "type": "git", 
+        "path": "./frontend"
+      },
+      "environment": {
+        "NEXT_PUBLIC_GOOGLE_MAPS_API": "${NEXT_PUBLIC_GOOGLE_MAPS_API}",
+        "NEXT_PUBLIC_API_URL": "${NEXT_PUBLIC_API_URL}"
+      }
+    }
+  ]
+} 

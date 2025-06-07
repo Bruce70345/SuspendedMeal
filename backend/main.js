@@ -4,19 +4,30 @@ const app = express();
 const cors = require('cors');
 const path = require('path');
 const mongoose = require('mongoose');
-const methodOverride = require('method-override');
+// const methodOverride = require('method-override');
 const request = require('request');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: true }));
-app.use(methodOverride('_method'));
-app.use(cors());
+// app.use(methodOverride('_method'));
+
+// 配置 CORS 以支援 Vercel 前端
+const corsOptions = {
+    origin: [
+        'http://localhost:3000', // 本地開發
+        'https://your-app.vercel.app', // 替換為您的 Vercel 域名
+        /\.vercel\.app$/ // 允許所有 Vercel 子域名
+    ],
+    credentials: true
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
-
-mongoose.connect('mongodb://localhost:27017/freeMeals', { useNewUrlParser: true, useUnifiedTopology: true })
+// 使用環境變數配置 MongoDB 連接
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/freeMeals';
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("MONGO CONNECTION OPEN!!!")
     })
@@ -29,7 +40,6 @@ app.get('/api', (req, res) => {
     res.send('Hello from Express!');
 });
 
-
 // 引入路由
 const userRoutes = require('./routes/usersRoute');
 const productRoutes = require('./routes/productsRoute');
@@ -40,8 +50,8 @@ app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/sign', signRoutes);
 
-
-
-app.listen(1000, () => {
-    console.log('Server is running on port 1000');
+// 使用環境變數配置 port
+const PORT = process.env.PORT || 1000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
