@@ -9,55 +9,55 @@ mongoose.connect('mongodb://localhost:27017/freeMeals')
         const newProducts = [
             {
                 userId: '785f7a05-501d-4ddf-9bb1-690570fab182',
-                productName: '薑絲炒飯',
+                productName: 'ginger fried rice',
                 dailyQuantity: 10,
                 campaignExpiration: new Date('2024-07-31')
             },
             {
                 userId: '785f7a05-501d-4ddf-9bb1-690570fab182',
-                productName: '火腿炒飯',
+                productName: 'ham fried rice',
                 dailyQuantity: 10,
                 campaignExpiration: new Date('2024-08-31')
             },
             {
                 userId: '785f7a05-501d-4ddf-9bb1-690570fab182',
-                productName: '牛肉炒飯',
+                productName: 'beef fried rice',
                 dailyQuantity: 10,
                 campaignExpiration: new Date('2024-12-31')
             },
             {
                 userId: 'cf5d3493-82a7-47e5-b50f-65f48b6588a9',
-                productName: '夏威夷義大利麵',
+                productName: 'hawaiian pasta',
                 dailyQuantity: 15,
                 campaignExpiration: new Date('2024-06-28')
             },
             {
                 userId: 'cf5d3493-82a7-47e5-b50f-65f48b6588a9',
-                productName: '苦瓜義大利麵',
+                productName: 'bitter gourd pasta',
                 dailyQuantity: 3,
                 campaignExpiration: new Date('2024-04-20')
             },
             {
                 userId: 'cf5d3493-82a7-47e5-b50f-65f48b6588a9',
-                productName: '南瓜義大利麵',
+                productName: 'pumpkin pasta',
                 dailyQuantity: 50,
                 campaignExpiration: new Date('2024-09-27')
             },
             {
                 userId: 'c3f55534-8a66-4509-aa2e-c72baf696bce',
-                productName: '肉丸咖哩',
+                productName: 'meatball curry',
                 dailyQuantity: 7,
                 campaignExpiration: new Date('2024-06-30')
             },
             {
                 userId: 'c3f55534-8a66-4509-aa2e-c72baf696bce',
-                productName: '薯條咖哩',
+                productName: 'french fries curry',
                 dailyQuantity: 20,
                 campaignExpiration: new Date('2024-08-16')
             },
             {
                 userId: 'c3f55534-8a66-4509-aa2e-c72baf696bce',
-                productName: '豬排咖哩',
+                productName: 'pork cutlet curry',
                 dailyQuantity: 90,
                 campaignExpiration: new Date('2024-12-31')
             }

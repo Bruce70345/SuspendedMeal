@@ -12,10 +12,10 @@ router.post('/signin', async (req, res) => {
         if (user) {
             res.json({ success: true, user });
         } else {
-            res.status(401).json({ success: false, message: '驗證錯誤' });
+            res.status(401).json({ success: false, message: 'authentication failed' });
         }
     } catch (error) {
-        res.status(500).json({ success: false, message: '伺服器錯誤', error: error.message });
+        res.status(500).json({ success: false, message: 'server error', error: error.message });
     }
 
 });
